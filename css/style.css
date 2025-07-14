@@ -1,0 +1,308 @@
+/* =====================
+   Reset & Gaya Umum
+===================== */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
+  line-height: 1.6;
+  color: #333;
+}
+
+h1, h2, h3 {
+  color: #003366; /* NAVY seragam */
+}
+
+/* Kontainer Umum */
+.container {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 20px;
+  width: 90%;
+  box-sizing: border-box;
+}
+
+/* =====================
+   Navigasi
+===================== */
+header,
+header.site-header {
+  background-color: #003366; /* NAVY seragam */
+  padding: 10px 20px;
+}
+
+.nav-menu {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-menu li a {
+  color: white;
+  text-decoration: none;
+  padding: 8px 16px;
+  display: block;
+  font-weight: bold;
+  border-radius: 4px;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.nav-menu li a.active {
+  background-color: #ffffff; /* Tab aktif putih */
+  color: #003366; /* Teks NAVY */
+}
+
+.nav-menu li a:hover {
+  background-color: #002244; /* NAVY lebih gelap */
+  color: white;
+}
+
+/* =====================
+   Hero Section
+===================== */
+.hero {
+  background-image: url('../images/coding.jpg');
+  background-size: cover;
+  background-position: center;
+  padding: 80px 20px;
+  text-align: center;
+  color: white;
+  position: relative;
+  overflow: hidden;
+  background-color: #000;
+}
+
+.hero::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  z-index: 0;
+}
+
+.hero * {
+  position: relative;
+  z-index: 2;
+}
+
+.hero h1, .hero p {
+  color: white;
+  text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.9);
+  font-weight: bold;
+  margin: 10px 0;
+}
+
+.hero-logo {
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 50%;
+  margin-bottom: 20px;
+  border: 4px solid white;
+  z-index: 3;
+}
+
+.bundar {
+  border-radius: 50%;
+}
+
+/* =====================
+   ABOUT Section
+===================== */
+.about {
+  background-color: #ffffff;
+  padding: 30px;
+  margin: 40px auto;
+  box-shadow: 0 2px 8px rgba(0, 51, 102, 0.2); /* Shadow navy */
+  border-radius: 8px;
+}
+
+.about h1 {
+  font-size: 28px;
+  margin-bottom: 20px;
+  text-align: center;
+  color: #003366; /* NAVY */
+  border-bottom: 2px solid #003366;
+  padding-bottom: 5px;
+}
+
+.about h2 {
+  font-size: 22px;
+  margin-top: 30px;
+  margin-bottom: 15px;
+  color: #003366; /* NAVY */
+}
+
+.about p {
+  margin-bottom: 16px;
+  font-size: 16px;
+  text-align: justify;
+  line-height: 1.8;
+  color: #003366; /* NAVY */
+}
+
+.about ul {
+  padding-left: 20px;
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+
+.about ul li {
+  margin-bottom: 10px;
+  font-size: 15px;
+  line-height: 1.6;
+  color: #003366; /* NAVY */
+}
+
+/* =====================
+   Footer
+===================== */
+footer {
+  text-align: center;
+  padding: 20px;
+  background-color: #003366; /* NAVY seragam */
+  color: white;
+  margin-top: 40px;
+}
+
+/* =====================
+   Responsive
+===================== */
+@media (max-width: 768px) {
+  .hero {
+    padding: 40px 10px;
+  }
+
+  .hero-logo {
+    width: 100px;
+    height: 100px;
+  }
+
+  .nav-menu {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .about {
+    padding: 20px 15px;
+    margin: 20px 10px;
+  }
+
+  .about h1 {
+    font-size: 22px;
+  }
+
+  .about h2 {
+    font-size: 18px;
+  }
+
+  .about p,
+  .about ul li {
+    font-size: 14px;
+  }
+}
+
+/* =====================
+   Bagian Berita & Acara
+===================== */
+.news, .events {
+  margin: 40px 0;
+}
+
+.news-item, .event-item {
+  background-color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px 25px;
+  margin-bottom: 25px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.news-item:hover, .event-item:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.15);
+}
+
+.news-item h2, .event-item h2 {
+  color: #003366; /* NAVY */
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.news-item p.date, .event-item p.date {
+  font-size: 14px;
+  color: #888;
+  margin-bottom: 10px;
+}
+
+.news-item p, .event-item p {
+  font-size: 16px;
+  color: #444;
+  line-height: 1.6;
+}
+
+.news h1, .events h1 {
+  font-size: 26px;
+  color: #1abc9c; /* Hijau aksen */
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+@media (max-width: 768px) {
+  .news-item, .event-item {
+    padding: 15px 18px;
+  }
+
+  .news-item h2, .event-item h2 {
+    font-size: 18px;
+  }
+
+  .news h1, .events h1 {
+    font-size: 22px;
+  }
+}
+
+/* =====================
+   Lightbox Overlay
+===================== */
+.lightbox {
+  display: none;
+  position: fixed;
+  z-index: 999;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.8);
+  justify-content: center;
+  align-items: center;
+}
+
+.lightbox img {
+  max-width: 90%;
+  max-height: 80%;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.4);
+}
+
+.lightbox:target {
+  display: flex;
+}
+
+.close-lightbox {
+  position: absolute;
+  top: 30px;
+  right: 40px;
+  font-size: 30px;
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}

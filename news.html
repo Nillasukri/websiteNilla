@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <title>Berita & Acara - Universitas Handayani Makassar</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f9f9f9;
+      margin: 0;
+      padding: 0;
+    }
+
+    header {
+      background: #003366; /* NAVY */
+      padding: 20px;
+    }
+
+    nav .nav-menu {
+      list-style: none;
+      display: flex;
+      justify-content: center;
+      margin: 0;
+      padding: 0;
+    }
+
+    .nav-menu li {
+      margin: 0 15px;
+    }
+
+    .nav-menu a {
+      color: #ffffff;
+      text-decoration: none;
+      font-weight: bold;
+      padding: 5px 10px;
+    }
+
+    .nav-menu a.active,
+    .nav-menu a:hover {
+      background: #ffffff;
+      color: #003366; /* NAVY */
+      border-radius: 4px;
+    }
+
+    .container {
+      max-width: 1000px;
+      margin: 40px auto;
+      padding: 0 20px;
+    }
+
+    h1 {
+      color: #003366; /* NAVY */
+      border-bottom: 2px solid #003366;
+      padding-bottom: 5px;
+    }
+
+    .news-item, .event-item {
+      background: #fff;
+      padding: 20px;
+      margin-bottom: 20px;
+      border-radius: 8px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+
+    .news-item h2,
+    .event-item h2 {
+      color: #003366; /* NAVY */
+      margin-top: 0;
+    }
+
+    .date {
+      font-size: 14px;
+      color: #003366; /* NAVY */
+      font-weight: bold;
+    }
+
+    footer {
+      background: #003366; /* NAVY */
+      color: #fff;
+      text-align: center;
+      padding: 20px;
+      margin-top: 40px;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navigasi -->
+  <header>
+    <nav>
+      <ul class="nav-menu">
+        <li><a href="index.html">Beranda</a></li>
+        <li><a href="about.html">Tentang</a></li>
+        <li><a href="programs.html">Program Studi</a></li>
+        <li><a href="news.html" class="active">Berita & Acara</a></li>
+        <li><a href="gallery.html">Galeri</a></li>
+        <li><a href="contact.html">Kontak</a></li>
+        <li><a href="admission.html">Pendaftaran</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <div class="container">
+
+      <section class="news">
+        <h1>Berita Terbaru</h1>
+
+        <article class="news-item">
+          <h2>Wisuda Tahunan 2025 Sukses Digelar</h2>
+          <p class="date">10 Juni 2025</p>
+          <p>Universitas Handayani Makassar telah melaksanakan wisuda tahunan untuk ratusan lulusan dari berbagai program studi...</p>
+        </article>
+
+        <article class="news-item">
+          <h2>Prodi Sistem Informasi Raih Akreditasi "A"</h2>
+          <p class="date">28 Mei 2025</p>
+          <p>Akreditasi terbaru dari BAN-PT menempatkan Program Studi Sistem Informasi pada kategori unggul...</p>
+        </article>
+
+        <article class="news-item">
+          <h2>Kerjasama Strategis dengan PT Inovasi Teknologi</h2>
+          <p class="date">20 Mei 2025</p>
+          <p>Penandatanganan MoU dilakukan untuk peningkatan kompetensi technopreneurship mahasiswa UHM...</p>
+        </article>
+
+        <article class="news-item">
+          <h2>Pengabdian Masyarakat oleh Dosen & Mahasiswa</h2>
+          <p class="date">15 Mei 2025</p>
+          <p>Melalui kegiatan di desa binaan, UHM berkontribusi pada pendidikan teknologi dasar bagi masyarakat...</p>
+        </article>
+
+        <article class="news-item">
+          <h2>Mahasiswa UHM Raih Juara Nasional Data Science</h2>
+          <p class="date">1 Mei 2025</p>
+          <p>Prestasi membanggakan diraih oleh tim mahasiswa dalam kompetisi nasional bidang data science di Jakarta...</p>
+        </article>
+      </section>
+
+      <section class="events">
+        <h1>Agenda Acara Kampus</h1>
+
+        <article class="event-item">
+          <h2>Webinar Nasional: Technopreneur Muda</h2>
+          <p class="date">Akan diselenggarakan: 30 Juni 2025</p>
+          <p>Kegiatan webinar dengan narasumber CEO startup teknologi lokal untuk menginspirasi mahasiswa UHM.</p>
+        </article>
+
+        <article class="event-item">
+          <h2>Workshop UI/UX Design Dasar</h2>
+          <p class="date">5 Juli 2025</p>
+          <p>Pelatihan terbuka untuk mahasiswa semua prodi dengan sertifikat pelatihan.</p>
+        </article>
+
+        <article class="event-item">
+          <h2>Pameran Karya Mahasiswa & Technopreneur Fair</h2>
+          <p class="date">15 Juli 2025</p>
+          <p>Menampilkan hasil karya inovasi dan bisnis teknologi mahasiswa Universitas Handayani Makassar.</p>
+        </article>
+
+        <article class="event-item">
+          <h2>Orientasi Mahasiswa Baru 2025</h2>
+          <p class="date">Agustus 2025</p>
+          <p>Kegiatan pengenalan kampus, dosen, serta sistem pembelajaran kepada mahasiswa baru UHM.</p>
+        </article>
+
+        <article class="event-item">
+          <h2>Kompetisi Internal Technopreneur Challenge</h2>
+          <p class="date">September 2025</p>
+          <p>Lomba tahunan antar fakultas untuk mengembangkan ide bisnis digital berbasis teknologi.</p>
+        </article>
+      </section>
+
+    </div>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Universitas Handayani Makassar</p>
+  </footer>
+
+</body>
+</html>
